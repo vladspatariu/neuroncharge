@@ -13,11 +13,14 @@
         if ($(this).parents('.nav-menu, .mobile-nav').length) {
           $('.nav-menu .active, .mobile-nav .active').removeClass('active');
           $(this).closest('li').addClass('active');
+          // on button click event, might add some glitch effect
         }
 
         if (hash == '#header') {
           $('#header').removeClass('header-top');
           $("section").removeClass('section-show');
+          // $(".main-logo").insertAfter('.mainPageContent');
+          $(".mainPage").insertBefore('.navbar-wrapper');
           if ($('body').hasClass('mobile-nav-active')) {
             $('body').removeClass('mobile-nav-active');
             $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
@@ -28,6 +31,8 @@
 
         if (!$('#header').hasClass('header-top')) {
           $('#header').addClass('header-top');
+          $(".mainPage").insertAfter('.navbar-wrapper');
+
           setTimeout(function() {
             $("section").removeClass('section-show');
             $(hash).addClass('section-show');
@@ -102,5 +107,27 @@
   //   delay: 10,
   //   time: 1000
   // });
+
+  var $window = $(window);
+  var $pane = $('#pane1');
+
+  function checkWidth() {
+      var windowsize = $window.width();
+      if (windowsize < 991) {
+          //if the window is greater than 440px wide then turn on jScrollPane..
+        console.log('is Mobile');
+        console.log($window.width());
+        $(".main-logo").insertBefore('.mainPageContent');
+      }
+      else {
+        $(".main-logo").insertAfter('.mainPageContent');
+        console.log('is Desktop');
+      }
+  }
+  // Execute on load
+  checkWidth();
+  // Bind event listener
+  $(window).resize(checkWidth);
+
 
 })(jQuery);
