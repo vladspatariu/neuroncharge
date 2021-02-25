@@ -34,12 +34,12 @@ body::before {
 # GENERAL STYLES
 --------------------------------------------------------------*/
 a {
-  color: #18d26e;
+  color: #F87C08;
   text-decoration: none;
 }
 
 a:hover {
-  color: #35e888;
+  color: #f52e2e;
   text-decoration: none;
 }
 
@@ -256,7 +256,7 @@ a:hover {
 
 .mobile-nav {
   position: fixed;
-  top:88px;
+  top: 12vh;
   right: 0;
   left: 0;
   bottom: 0;
@@ -280,13 +280,13 @@ a:hover {
   position: relative;
   color: #fff;
   padding: 10px 20px;
-  font-weight: 900;
+  font-weight: 800;
   outline: none;
   font-size: 45px;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #18d26e;
+  color: #F87C08;
   text-decoration: none;
 }
 
@@ -346,6 +346,7 @@ a:hover {
 
 #header.header-top .nav-menu {
   margin-top: 0;
+  margin: 2vh 0;
 }
 
 /* Logo container */
@@ -423,8 +424,8 @@ section .container {
 
 .section-title h2::after {
   content: "";
-  width: 20%;
-  height: 2px;
+  width: 60%;
+  height: 5px;
   display: inline-block;
   background: #ff460e;
   margin: 4px 10px;
@@ -446,7 +447,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #18d26e;
+  color: #F87C08;
 }
 
 .about-me .content ul {
@@ -461,7 +462,7 @@ section .container {
 .about-me .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #18d26e;
+  color: #F87C08;
 }
 
 .about-me .content p:last-child {
@@ -517,6 +518,7 @@ section .container {
   padding: 14px;
   float: left;
   background: rgba(255, 255, 255, 0.1);
+  margin-top: 1vh;
 }
 
 .contact .info-box h3 {
@@ -568,6 +570,7 @@ section .container {
     transform: rotate(360deg);
   }
 }
+
 
 
 /*--------------------------------------------------------------
@@ -713,7 +716,7 @@ width: 10px;
 background: #0a0a0a; 
 }
 ::-webkit-scrollbar-thumb {
-  background: #c96806; 
+  background: #ff460e; 
   border:2px ridge #000;
   height:100px;
   border-radius:20px;
