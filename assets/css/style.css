@@ -153,9 +153,9 @@ a:hover {
   height: 60px;
 }
 /* General Social Links Hover color (to add custom for each) */
-/* #header .social-links a:hover {
+#header .social-links a:hover {
   background: #d24318;
-} */
+}
 
 @media (max-width: 992px) {
   #header h2 {
@@ -218,7 +218,7 @@ a:hover {
   height: 4px;
   bottom: -4px;
   left: 0;
-  background-color: #d24318;
+  background-color: #F87C08;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -447,7 +447,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #F87C08;
+  color: #ff460e;
 }
 
 .about-me .content ul {
@@ -542,11 +542,11 @@ section .container {
 }
 
 .contact .info-box .social-links a {
-  font-size: 18px;
+  font-size: 20px;
   display: inline-block;
   color: #fff;
   line-height: 1;
-  margin-right: 12px;
+  margin-right: 20px;
   transition: 0.3s;
 }
 
