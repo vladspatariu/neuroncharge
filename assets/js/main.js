@@ -102,32 +102,46 @@
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
 
-  // jQuery counterUp
-  // $('[data-toggle="counter-up"]').counterUp({
-  //   delay: 10,
-  //   time: 1000
-  // });
-
-  var $window = $(window);
-  var $pane = $('#pane1');
-
-  function checkWidth() {
-      var windowsize = $window.width();
-      if (windowsize < 991) {
+  // Torn out function so that code passes only once
+        if ($(window).width() < 991) {
           //if the window is greater than 440px wide then turn on jScrollPane..
         console.log('is Mobile');
-        console.log($window.width());
+        console.log($(window).width());
         $(".main-logo").insertBefore('.mainPageContent');
       }
       else {
         $(".main-logo").insertAfter('.mainPageContent');
         console.log('is Desktop');
       }
-  }
-  // Execute on load
-  checkWidth();
-  // Bind event listener
-  $(window).resize(checkWidth);
+
+
+
+  // jQuery counterUp
+  // $('[data-toggle="counter-up"]').counterUp({
+  //   delay: 10,
+  //   time: 1000
+  // });
+
+  // var $window = $(window);
+  // var $pane = $('#pane1');
+
+  // function checkWidth() {
+  //     var windowsize = $window.width();
+  //     if (windowsize < 991) {
+  //         //if the window is greater than 440px wide then turn on jScrollPane..
+  //       console.log('is Mobile');
+  //       console.log($window.width());
+  //       $(".main-logo").insertBefore('.mainPageContent');
+  //     }
+  //     else {
+  //       $(".main-logo").insertAfter('.mainPageContent');
+  //       console.log('is Desktop');
+  //     }
+  // }
+  // // Execute on load
+  // checkWidth();
+  // // Bind event listener
+  // $(window).resize(checkWidth);
 
 
 })(jQuery);
