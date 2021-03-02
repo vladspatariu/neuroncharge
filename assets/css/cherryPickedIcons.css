@@ -18,7 +18,7 @@ a.patreon {
     display: block;
     width: 4px;
     height: 16px;
-    background: currentColor;
+    background: white;
     left: -6px
   }
   .gg-patreon::after {
