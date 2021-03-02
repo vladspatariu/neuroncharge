@@ -155,8 +155,6 @@ a:hover {
   width: 17%;
 }
 
-
-
 /* Title size in small mobile */
 @media (max-width: 768px) {
   #header h1 {
@@ -199,7 +197,7 @@ a:hover {
   height: 4px;
   bottom: -4px;
   left: 0;
-  background-color: #F87C08;
+  background-color: #ff460e;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -211,7 +209,7 @@ a:hover {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #F87C08;
+  color: #ff460e;
   text-decoration: none;
 }
 
