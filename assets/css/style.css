@@ -147,28 +147,15 @@ a:hover {
 }
 
 /* Patreon custom size because icofont didn't I had to use png (no icofont) */
-.social-links .patreon img {
+/* first is the main page patreon button, second is on the contact page  */
+#patreon img {
   width: 50%;
 }
-
-@media (max-width: 992px) {
-  #header h2 {
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    padding-bottom: 10%;
-  }
-
-  #header .social-links {
-    margin-top: 15px;
-  }
-
-  #header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.social-links .patreon img {
+  width: 17%;
 }
+
+
 
 /* Title size in small mobile */
 @media (max-width: 768px) {
@@ -636,6 +623,29 @@ section .container {
     text-align:center;
     width: 100%;
   }
+
+    /* Patreon button on contacts page mobile size */
+    .social-links .patreon img {
+      width: 40%;
+    }
+    /* main page mobile styles */
+    #header h2 {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      padding-bottom: 10%;
+    }
+  
+    #header .social-links {
+      margin-top: 15px;
+    }
+  
+    #header .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
 }
 @media (max-width: 768px) {
   #header .main-logo img {
